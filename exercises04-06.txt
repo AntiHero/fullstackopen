@@ -1,5 +1,4 @@
 //EXERCISE 0.4
-
 title Exercise 0.4
 
 Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
