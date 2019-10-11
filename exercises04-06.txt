@@ -1,0 +1,58 @@
+//EXERCISE 0.4
+
+title Exercise 0.4
+
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+Server-->Browser: text/html CODE: 302 (URL redirect to /notes)
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+Server-->Browser: HTML code
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+Server-->Browser: main.js
+
+note over browser:
+browser starts executing main.js
+that requests JSON data from server 
+end note
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+Server-->Browser: [{"content":"HTML is easy","date":"2019-05-23T17:30:31.098Z"},..]
+
+note over browser:
+due to code in main.js browser renders notes to a page
+end note
+
+//EXERCISE 0.5
+title Exercise 0.5
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+Server-->Browser: HTML code
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+Server-->Browser: spa.js
+
+note over browser:
+browser starts executing spa.js
+that requests JSON data from server 
+end note
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+Server-->Browser: [{"content":"HTML is easy","date":"2019-05-23T17:30:31.098Z"},..]
+
+note over browser:
+due to code in spa.js browser renders notes to a page 
+(redrawNotes function is called)
+end note
+
+//EXERCISE 0.6
+title Exercise 0.6
+
+note over browser:
+on pressing "Save" button new note is creating, then it's pushing to
+a "notes" array and by calling redrawNotes function notes render to display
+after this "POST" request with new note is sending to a server
+end note
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+Server-->Browser: {"message":"note created"}
