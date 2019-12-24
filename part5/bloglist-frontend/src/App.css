@@ -1,0 +1,35 @@
+.notification {
+  font-size: 20px;
+  border: 1px solid violet;
+  padding: 10px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-block;
+}
+
+.blog {
+  cursor: pointer;
+}
+
+.blog:hover {
+  color: darkcyan;
+}
+
+.expandedBlog {
+  padding: 5px;
+  border: 1px solid peru;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.expandedBlog:hover {
+  background-color: turquoise;
+}
