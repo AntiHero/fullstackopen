@@ -1,0 +1,73 @@
+.notification {
+  font-size: 20px;
+  border: 1px solid violet;
+  padding: 10px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-block;
+}
+
+.blog {
+  cursor: pointer;
+}
+
+.blog a {
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+.blog span {
+  color: grey;
+}
+
+.blog a:hover {
+  color: rgb(108, 250, 120);
+}
+
+.singleBlog span {
+  color: lightsalmon;
+}
+
+.users a {
+  text-decoration: none;
+  color: darkslategray;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+.users a:hover {
+  color: white;
+}
+
+.notification {
+  width: 100%;
+  background-color: violet;
+  text-align: center;
+}
+
+.expandedBlog {
+  padding: 5px;
+  border: 1px solid peru;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.expandedBlog:hover {
+  background-color: turquoise;
+}
